@@ -1,12 +1,12 @@
 function dealias (options, conf) {
-  return Object.keys(conf).reduce(function (opts, conf_key) {
-    if (!opts.hasOwnProperty(conf_key)) {
-      var alias = conf[conf_key].find(function (aka) {
+  return Object.keys(conf).reduce(function (opts, ogkey) {
+    if (!opts.hasOwnProperty(ogkey)) {
+      var alias = conf[ogkey].find(function (aka) {
         return opts.hasOwnProperty(aka)
       })
-      if (alias) opts[conf_key] = opts[alias]
+      if (alias) opts[ogkey] = opts[alias]
     }
-    conf[conf_key].forEach(function (aka) {
+    conf[ogkey].forEach(function (aka) {
       return delete opts[aka]
     })
     return opts
