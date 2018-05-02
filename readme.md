@@ -4,7 +4,7 @@
 
 ***
 
-Dealias an options object. Tiny sugar topping that allows you to accept an `options` object full of aliases from your module users with `aka-opts` reducing that internally.
+Dealias an `options` object. Tiny sugar topping that allows you to accept an `options` object full of aliases from your module users with `aka-opts` reducing that internally.
 ***
 
 ## Get it!
@@ -43,7 +43,7 @@ Dealias `options` according to the mappings provided by `conf` which should look
 }
 ```
 
-Aliases are considered if `options` does not have the original key. `dealias` uses the first alias value it finds on `options` for the original key. All aliases are deleted from the return object.
+Aliases are considered if `options` does not have the original key. `dealias` uses the first alias value it finds on `options` for the original key. `dealias` does not mutate `options`. All alias properties are stripped off of the return object.
 
 ***
 

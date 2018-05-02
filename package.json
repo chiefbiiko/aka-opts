@@ -1,6 +1,6 @@
 {
   "name": "aka-opts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "reduce an options object with alias keys",
   "main": "index.js",
   "scripts": {
