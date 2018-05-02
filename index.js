@@ -7,7 +7,7 @@ function dealias (options, conf) {
       if (alias) opts[conf_key] = opts[alias]
     }
     conf[conf_key].forEach(function (aka) {
-      delete opts[aka]
+      return delete opts[aka]
     })
     return opts
   }, Object.assign({}, options))
