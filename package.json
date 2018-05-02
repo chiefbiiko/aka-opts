@@ -1,0 +1,28 @@
+{
+  "name": "aka-opts",
+  "version": "0.0.0",
+  "description": "reduce an options object with alias keys",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiefbiiko/aka-opts.git"
+  },
+  "keywords": [
+    "options",
+    "alias",
+    "aka",
+    "user-friendly"
+  ],
+  "author": "Noah Anabiik Schwarz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chiefbiiko/aka-opts/issues"
+  },
+  "homepage": "https://github.com/chiefbiiko/aka-opts#readme",
+  "devDependencies": {
+    "tape": "^4.9.0"
+  }
+}
